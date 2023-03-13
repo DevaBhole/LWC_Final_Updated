@@ -1,0 +1,19 @@
+<template>
+<lightning-card > 
+ <div class="row">
+    <div class="column">
+     <lightning-combobox name="obj" label="Select Object" value = {selectedObj} options={objLst} onchange={getObjectFields}></lightning-combobox>
+    </div>
+    <br>
+     <div class="column">
+          <lightning-button label="Create Record" value="Create Record" onclick={createRecord}></lightning-button>
+    </div>
+ </div>
+ 
+</lightning-card>
+<lightning-card>
+<div>
+ <c-fields-selection ></c-fields-selection>
+ </div>
+</lightning-card>
+</template>
